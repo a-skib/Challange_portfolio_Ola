@@ -8,7 +8,7 @@ from pages.login_page import LoginPage
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 
-class TestLoginToTheSystem(unittest.TestCase):
+class LoginToTheSystem(unittest.TestCase):
 
     @classmethod
     def setUp(self):
@@ -18,7 +18,7 @@ class TestLoginToTheSystem(unittest.TestCase):
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
-    def test_log_in_to_the_system(self):
+    def log_in_to_the_system(self):
         user_login = LoginPage(self.driver)
         user_login.type_in_email('user03@getnada.com')
         user_login.type_in_password('Test-1234')
