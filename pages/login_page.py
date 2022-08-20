@@ -1,7 +1,7 @@
  from pages.base_page import BasePage
 
 
- class LoginPage(BasePage):
+ class log_in_to_the_system(BasePage):
      login_field_xpath = "//*[@id='login']"
      password_field_xpath = "//*[@id= 'password']"
      sign_in_button_xpath = "//*[text()= 'Sign in']"
